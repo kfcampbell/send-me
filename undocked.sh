@@ -29,6 +29,20 @@ do
 
 	# send slack to the sixth virtual desktop
 	wmctrl -r "slack" -t 5
+
+	# send spotify,signal,discord to the seventh virtual desktop if they exist
+	if wmctrl -l | grep -qi "spotify"; then
+		wmctrl -r "spotify" -t 6
+	fi
+
+	if wmctrl -l | grep -qi "signal"; then
+		wmctrl -r "signal" -t 6
+	fi
+
+	if wmctrl -l | grep -qi "discord"; then
+		wmctrl -r "discord" -t 6
+	fi
+
 done
 
 
