@@ -2,9 +2,6 @@
 
 set -ex
 
-# set the active window to the first virtual desktop, switch to the first virtual desktop
-# wmctrl -r :ACTIVE: -t 1; wmctrl -s 1
-
 # run the loop a few times to get past race conditions
 for i in {0..5}
 do
