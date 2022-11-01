@@ -10,7 +10,7 @@ do
 	wmctrl -r "code" -t 0
 
 	# send terminal to the second virtual desktop
-	wmctrl -r "kfcampbell@framework" -t 1
+	wmctrl -r "kfcampbell@pop-os" -t 1
 
 	# send one firefox window to third virtual desktop
 	# assuming it has the terraform provider page up
@@ -18,7 +18,8 @@ do
 
 	# send the other firefox window to the fourth virtual desktop
 	# assuming it has email up
-	wmctrl -r "inbox" -t 3
+	# wmctrl -r "inbox" -t 3
+	wmctrl -r "notifications" -t 3
 
 	# send obsidian to the fifth virtual desktop
 	# wmctrl -r "@!0,0;BDHF" -t 4
