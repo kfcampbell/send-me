@@ -10,7 +10,7 @@ do
 	wmctrl -r "code" -t 0
 
 	# send terminal to the first virtual desktop
-	wmctrl -r kfcampbell@pop-os -t 0
+	wmctrl -r kfcampbell@kfcampbell -t 0
 
 	# send firefox windows to second virtual desktop
 	wmctrl -l | grep -i firefox | cut -f1 -d' ' | head -n 2 | xargs -I {} wmctrl -ir {} -t 1
